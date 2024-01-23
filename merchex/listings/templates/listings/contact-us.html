@@ -1,0 +1,14 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+
+<p>Nous sommes la pour vous aider.</p>
+
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Soumettre" />
+</form>
+ {% endblock %}
+  
